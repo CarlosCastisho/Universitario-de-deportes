@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+html, body {
+  min-width: 290px;
+  color: #585858;
+  background-color: #F0E3D0;
+  font-family: Inconsolata, sans-serif;
+  line-height: 1.5;
+}
+
+.logo {
+  width: 60vw
+}
+
+.logo > img {
+  width: 10%;
+  height: 10%;
+  max-width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+#navbar{
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: #585858;
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: justify;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 80%;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#navbar li {
+  color: #943126;
+  border-top: 1px solid;
+  list-style: nome;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #943126;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+section article {
+  color: #943126;
+  margin: 15px;
+  font-size: 1em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+img  {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0;
+}
+
+@media only screen and (max-width:815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+  
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    max-height: none;
+    z-index: 1;
+    border-bottom: 2px  solid;
+  }
+  
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width:400px)  {
+  #main-doc {
+    margin-left: -10px;
+  }
+}
